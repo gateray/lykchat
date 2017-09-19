@@ -57,8 +57,8 @@ DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.mysql',
         'NAME' : 'lykchat',
-        'USER' : 'lykchat',
-        'PASSWORD' :'!QAZ2wsx',
+        'USER' : 'root',
+        'PASSWORD' :'root',
         'HOST' : '127.0.0.1',
         'PORT' : '3306',
         'OPTIONS': {  
