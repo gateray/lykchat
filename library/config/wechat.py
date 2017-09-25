@@ -74,7 +74,7 @@ max_upload_size = 1024 * 1024 * 5
 # 上传文件最大值，单位bytes，默认5M
 
 CRONJOBS = (
-    ('*/2 * * * *', 'library.cron.checklogin.check_login', '>>/dev/shm/lykchat.txt 2>&1'),
+    ('*/2 * * * *', 'library.cron.checklogin.check_login', '>>/tmp/lykchat.txt 2>&1'),
 )
 # 检测登陆状态的计划任务
 

@@ -2,7 +2,7 @@ import json, os, time
 
 class Manage_Logininfo():
     def __init__(self):
-        self.dir = '/dev/shm/lykchat/'
+        self.dir = '/tmp/lykchat/'
         if os.path.exists(self.dir) :
             if not os.path.isdir(self.dir)  :
                 os.rename(self.dir, self.dir + '-' + str(int(time.time)) + '-lykchat-bk')
@@ -95,6 +95,6 @@ class Manage_Logininfo():
             info_dict = open(user_file).read()
             info_dict = json.loads(info_dict)
             all_info_dict[username] = info_dict
-            
+
         return all_info_dict
-        
+
